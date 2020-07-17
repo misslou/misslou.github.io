@@ -17,10 +17,20 @@
   <meta name="description" content="个人博客">
   <meta name="author" content="lou bin">
   <meta name="keywords" content="野生程序员,开源爱好者">
-  <title>归档 - 娄彬的鱼塘</title>
+  <title>关于 - 娄彬的鱼塘</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -161,45 +171,63 @@
         <div class="py-5" id="board"
           >
           
+            <div class="about-avatar">
+              <img src="/img/avatar.png" srcset="/img/loading.gif"
+                   class="img-fluid" alt="avatar">
+            </div>
+          
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 12 篇文章</p>
-  <hr>
-  
-    
+<div class="text-center">
+  <div class="about-info">
+    <div class="about-name">娄彬</div>
+    <div class="about-intro">前端搬砖</div>
+    <div class="about-icons">
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/07/17/hello-world9/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">111111111</span>
-      <time style="float: right;">07-17</time>
-    </a>
-  
-    
-    <a href="/2020/07/17/hello-world10/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">111111111</span>
-      <time style="float: right;">07-17</time>
-    </a>
+        
+        
+        
+        <a href="https://github.com/misslou" class="
+           hint--bottom hint--rounded"
+           aria-label=GitHub
+        >
+          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
+          
+        </a>
+      
+        
+        
+        
+        <a href="mailto:15588707025@163.com" class="
+           hint--bottom hint--rounded"
+           aria-label=Email
+        >
+          <i class="iconfont icon-mail" aria-hidden="true"></i>
+          
+        </a>
+      
+        
+        
+        
+        <a href="javascript:;" class="qr-trigger
+           "
+           
+        >
+          <i class="iconfont icon-wechat-fill" aria-hidden="true"></i>
+          
+            <img class="qr-img" src="/img/Wechat.jpeg" srcset="/img/loading.gif" alt="qrcode" />
+          
+        </a>
+      
+    </div>
+  </div>
+</div>
+<div class="mt-5 markdown-body">
   
 </div>
-
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/archives/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </span>
-  </nav>
-  
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
-      ele.href += '#board';
-    }
-  </script>
-
-
 
               </div>
             </div>
@@ -290,7 +318,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "你来看我了呀&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -304,6 +332,21 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
 
 
 
